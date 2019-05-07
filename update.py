@@ -2,6 +2,17 @@ import os
 import requests
 import shutil
 import time
+def choice():
+    choose = input("Do you have git hub terminal: ")
+    if choose == "yes":
+        git_install()
+    elif choose == "no":
+        windows_updater()
+    else:
+        print("Invalid option")
+        choice()
+
+
 def windows_updater():
     time.sleep(1)
     print("Getting url")
@@ -22,10 +33,15 @@ def windows_updater():
     print("Downloaded")
     print("Getting updated")
     os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
+    current = os.getcwd()
+    os.chdir("update files")
     os.chdir("instaInstaller-master")
     os.system("move ak_installer.py"+' '+cwd)
     os.system("move list.txt"+' '+cwd)
+    os.chdir(cwd)
     shutil.rmtree("update files")
     print("Updated")
+    
+    
 
 windows_updater()
