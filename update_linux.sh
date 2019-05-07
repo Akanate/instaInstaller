@@ -1,7 +1,7 @@
 #!/bin/bash 
 mkdir /root/update_files
 echo "Making directory for store"
-cd /root/update_files
+cd update_files
 echo "Moving to directory which was created"
 git clone https://github.com/WHYSOEASY/instaInstaller.git
 cd instaInstaller
