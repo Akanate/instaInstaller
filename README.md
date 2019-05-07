@@ -26,3 +26,8 @@ Windows:
 4. Run 'cat README.md'
 5. Run 'python3 ak_installer.py to list valid commands.'
 6. Run 'python3 ak_installer.py + command' to get command
+
+## Super Ez-Mode
+> Follow these instructions if you're still struggling to download (LINUX Only)
+1. Research on how to use GIT and the Terminal
+2. Follow Ez-Mode instructions.
