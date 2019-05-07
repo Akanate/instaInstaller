@@ -1,5 +1,6 @@
 #!/bin/bash 
 mkdir update_files
+echo $PWD
 echo "Making directory for store"
 cd update_files
 echo "Moving to directory which was created"
