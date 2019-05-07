@@ -1,5 +1,6 @@
 #!/bin/bash 
 mkdir /root/update_files
+cd /root
 echo "Making directory for store"
 cd update_files
 echo "Moving to directory which was created"
