@@ -1,0 +1,3 @@
+Thanks for installing instaInstaller!
+
+Remember that instaInstaller must be ran through the Terminal or the Command Prompt!
