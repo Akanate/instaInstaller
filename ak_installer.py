@@ -380,7 +380,7 @@ def initialize(choose):
     elif choose == "get atom linux":
         atom()
     elif choose == "list":
-        f = open("options.txt","r")
+        f = open("list.txt","r")
         contents = f.read()
         print("This list you have")
         print(contents)
