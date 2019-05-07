@@ -15,7 +15,7 @@ def choice():
 def git_install():
     cwd = os.getcwd()
     os.chdir(cwd)
-    os.mkdir("update files")
+    os.mkdir("update_files")
     print("Making directory for store")
     os.chdir("update_files")
     os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
