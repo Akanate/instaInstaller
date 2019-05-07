@@ -23,7 +23,7 @@ def git_install():
     os.system("move ak_installer.py"+' '+cwd)
     os.system("move list.txt"+' '+cwd)
     os.chdir(cwd)
-    os.system("rmdir update files /S /Q")
+    os.system("rmdir update files /s /q")
     print("Done")
     exit()
 
@@ -53,7 +53,7 @@ def windows_updater():
     os.system("move ak_installer.py"+' '+cwd)
     os.system("move list.txt"+' '+cwd)
     os.chdir(cwd)
-    os.system("rmdir update files /S /Q")
+    os.system("rmdir update files /s /q")
     print("Updated")
     
     
