@@ -19,8 +19,9 @@ Windows:
 
 ## Ez-Mode (Easy Mode):
 > Follow these instructions if you're struggling to download (LINUX Only)
-1. Do apt-get install git
-2. Do git clone https://github.com/WHYSOEASY/instaInstaller.git
+1. Run 'apt-get install git' in the Terminal.
+> Don't include the apostrophes in your command.
+2. Run 'git clone https://github.com/WHYSOEASY/instaInstaller.git'
 3. Navigate to where you have just cloned this repository
 4. Run 'cat README.md'
 5. Run 'python3 ak_installer.py to list valid commands.'
