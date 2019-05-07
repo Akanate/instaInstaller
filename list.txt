@@ -6,3 +6,4 @@ get python2 windows
 get python3 windows
 get python3 linux
 get python2 linux
+get atom linux
