@@ -21,6 +21,7 @@ def git_install():
     os.chdir("instaInstaller-master")
     print("Changing directory")
     os.system("move ak_installer.py"+' '+cwd)
+    os.system("move list.txt"+' '+cwd)
     os.chdir(cwd)
     shutil.rmtree("update files")
     print("Done")
