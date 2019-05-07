@@ -22,7 +22,7 @@ def windows_updater():
     print("Downloaded")
     print("Getting updated")
     os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
-    os.chdir("instaInstaller")
+    os.chdir("instaInstaller-master")
     os.system("move ak_installer.py"+' '+cwd)
     os.system("move list.txt"+' '+cwd)
     shutil.rmtree("update files")
