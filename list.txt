@@ -1,0 +1,8 @@
+#This is the list of all of the things you can download currently
+get pycharm windows
+get pycharm linux
+get notepad ++ windows
+get python2 windows
+get python3 windows
+get python3 linux
+get python2 linux
