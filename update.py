@@ -12,6 +12,19 @@ def choice():
         print("Invalid option")
         choice()
 
+def git_install():
+    cwd = os.getcwd()
+    os.mkdir("update files")
+    print("Making directory for store")
+    os.chdir("update files")
+    os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
+    os.chdir("instaInstaller-master")
+    print("Changing directory")
+    os.system("move ak_installer.py"+' '+cwd)
+    os.chdir(cwd)
+    shutil.rmtree("update files")
+    print("Done")
+    exit()
 
 def windows_updater():
     time.sleep(1)
@@ -43,5 +56,4 @@ def windows_updater():
     print("Updated")
     
     
-
-windows_updater()
+choice()
