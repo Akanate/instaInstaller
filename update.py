@@ -1,11 +1,12 @@
 import os
 import requests
+import shutil
 def windows_updater():
     time.sleep(1)
     print("Getting url")
     url = "https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-32-bit.exe"
-    requested = request.get(url)
-    contents = request.content
+    requested = requests.get(url)
+    contents = requested.content
     time.sleep(1)
     print("Downloading git into file")
     cwd = os.getcwd()
@@ -22,6 +23,8 @@ def windows_updater():
     os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
     os.chdir("instaInstaller")
     os.system("move ak_installer.py"+' '+cwd)
+    os.system("move list.txt"+' '+cwd)
+    shutil.rmtree("update files")
     print("Updated")
 
 windows_updater()
