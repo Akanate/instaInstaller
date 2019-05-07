@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Version 1.0
+#Version 1.1
 import os
 import requests
 import time
@@ -36,6 +36,9 @@ def notepad_plus():
         print("Starting installation...")
         os.system("notepad++.exe")
         print("Beginning installation")
+        os.system("del notepad++.exe")
+        time.sleep(30)
+        exit()
     except OSError as e:
         print(e)
         print("Something went wrong")
@@ -47,7 +50,7 @@ def sublime():
         url = "https://download.sublimetext.com/Sublime%20Text%20Build%203207%20Setup.exe"
         print("Getting url...")
         requester = requests.get(url)
-        contents = request.content
+        contents = requester.content
         print("Getting the url...Done")
         time.sleep(1)
         print("Opening file...")
@@ -71,6 +74,7 @@ def sublime():
         time.sleep(1)
         os.system("sublime.exe")
         print("Install menu")
+        os.system("del sublime.exe")
         time.sleep(30)
         exit()
     except OSError as e:
@@ -113,6 +117,7 @@ def python3():
         print("Initialzing installation...Done")
         os.system("python3.exe")
         print("Install menu done")
+        os.system("del python3.exe")
         time.sleep(30)
         exit()
     except OSError as e:
@@ -150,6 +155,7 @@ def python2():
         print("Initializing")
         os.system("python2.msi")
         print("Initializing...Done")
+        os.system("del python2.msi")
         time.sleep(30)
         exit()
     except OSError as e:
@@ -257,6 +263,7 @@ def Pycharm():
         os.chdir(cwd)
         os.system("pycharm.exe")
         print("Initializing.....")
+        os.system("del pycharm.exe")
         time.sleep(30)
         exit()
     except OSError as e:
@@ -312,7 +319,7 @@ def PycharmL():
         print("Starting install")
         os.system("chmod +x pycharm.sh")
         os.system("./pycharm.sh")
-        print("Installing")        
+        print("Installing")
         time.sleep(30)
         exit()
     except OSError as e:
