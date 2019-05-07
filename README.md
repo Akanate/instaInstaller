@@ -15,3 +15,4 @@ Windows:
 * Python
 * Python3
 * Notepad++
+* Sublime
