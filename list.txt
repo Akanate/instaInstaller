@@ -1,4 +1,4 @@
-#This is the list of all of the things you can download currently on windows and linux
+#This is the list of all of the things you can download currently
 get pycharm windows
 get pycharm linux
 get notepad ++ windows
