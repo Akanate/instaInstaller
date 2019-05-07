@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Removing old files"
+cd "$(dirname "$0")"
 rm -r ak_installer.py
 rm -r list.txt
 mkdir update_files
