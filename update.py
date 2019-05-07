@@ -26,7 +26,7 @@ def git_install():
     os.system("move README.md"+' '+cwd)
     os.system("move update_linux.sh"+' '+cwd)
     os.chdir(cwd)
-    os.system("del /f /q /a update_files")
+    os.system("rmdir /q /s update_files")
     print("Done")
     exit()
 
@@ -58,7 +58,7 @@ def windows_updater():
     os.system("move README.md"+' '+cwd)
     os.system("move update_linux.sh"+' '+cwd)
     os.chdir(cwd)
-    os.system("del /f /q /a update_files")
+    os.system("rmdir /q /s update_files")
     print("Updated")
     
     
