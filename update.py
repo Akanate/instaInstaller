@@ -1,10 +1,11 @@
 import os
 import requests
 import shutil
+import time
 def windows_updater():
     time.sleep(1)
     print("Getting url")
-    url = "https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-32-bit.exe"
+    url = "https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-64-bit.exe"
     requested = requests.get(url)
     contents = requested.content
     time.sleep(1)
