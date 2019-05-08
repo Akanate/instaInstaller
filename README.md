@@ -9,6 +9,7 @@ instaInstaller is a program created in **python3** which can be used to install 
 - Fixed a major bug.
 > Thanks to ProgrammingTiger\#0341 for spotting it.
 - [v1.31] Fixed another major bug
+- [v1.31] Fixed another one.
 
 ## Currently supported programs
 Linux:
