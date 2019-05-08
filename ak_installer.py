@@ -443,13 +443,12 @@ def virtualboxL():
         print("Initializing menu...Done")
         time.sleep(10)
         exit()
-     except OSError:
+    except OSError:
         print("Something went wrong")
         exit()
-     except KeyboardInterruptError:
+    except KeyboardInterruptError:
         print("Dont interrupt")
         pass
-
 
 
 def initialize(choose):
