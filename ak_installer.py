@@ -43,7 +43,7 @@ def notepad_plus():
         print(e)
         print("Something went wrong")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -83,7 +83,7 @@ def sublime():
         print("Something went wrong exitting")
         print(e)
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Don't interrupt")
         pass
 
@@ -128,7 +128,7 @@ def python3():
         print(e)
         print("Something went wrong exitting")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -168,7 +168,7 @@ def python2():
         print(e)
         print("Something went wrong exitting")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -215,7 +215,7 @@ def python2L():
         print("Something went wrong")
         print(e)
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -251,7 +251,7 @@ def python3L():
     except OSError:
         print("Something went wrong initializing")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -285,7 +285,7 @@ def Pycharm():
         print("Something went wrong")
         print(e)
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Interrupt detected")
         pass
 
@@ -344,7 +344,7 @@ def PycharmL():
         print("Something went wrong")
         print(e)
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
 
@@ -383,7 +383,7 @@ def atom():
         print("Something went wrong")
         print(e)
         exit()
-     except KeyboardInterruptError:
+     except KeyboardInterrupt:
         print("Dont interrupt")
         pass
        
@@ -447,7 +447,7 @@ def virtualboxL():
     except OSError:
         print("Something went wrong")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("Dont interrupt")
         pass
    
@@ -477,7 +477,7 @@ def chromium():
     except OSError:
         print("Something went wrong")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("You can't interrupt")
         pass
 
@@ -492,7 +492,7 @@ def chromiumL():
     except OSError:
         print("Something went wrong")
         exit()
-    except KeyboardInterruptError:
+    except KeyboardInterrupt:
         print("You cant interrupt")
         pass
 
