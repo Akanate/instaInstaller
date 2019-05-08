@@ -43,7 +43,9 @@ def notepad_plus():
         print(e)
         print("Something went wrong")
         exit()
-
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 def sublime():
     try:
@@ -81,7 +83,9 @@ def sublime():
         print("Something went wrong exitting")
         print(e)
         exit()
-
+    except KeyboardInterruptError:
+        print("Don't interrupt")
+        pass
 
 def python3():
     try:
@@ -124,7 +128,9 @@ def python3():
         print(e)
         print("Something went wrong exitting")
         exit()
-
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 def python2():
     try:
@@ -162,6 +168,9 @@ def python2():
         print(e)
         print("Something went wrong exitting")
         exit()
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 def python2L():
     try:
@@ -206,6 +215,9 @@ def python2L():
         print("Something went wrong")
         print(e)
         exit()
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 
 def python3L():
@@ -239,6 +251,9 @@ def python3L():
     except OSError:
         print("Something went wrong initializing")
         exit()
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 
 
@@ -270,6 +285,9 @@ def Pycharm():
         print("Something went wrong")
         print(e)
         exit()
+    except KeyboardInterruptError:
+        print("Interrupt detected")
+        pass
 
 def PycharmL():
     try:
@@ -326,6 +344,9 @@ def PycharmL():
         print("Something went wrong")
         print(e)
         exit()
+    except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 def atom():
      try:
@@ -362,10 +383,72 @@ def atom():
         print("Something went wrong")
         print(e)
         exit()
+     except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
+       
+def virtualbox():
+    try:
+        print("Looking for url...")
+        url = "https://download.virtualbox.org/virtualbox/6.0.6/VirtualBox-6.0.6-130049-Win.exe"
+        requested = requests.get(url)
+        contents = requested.content
+        print("Looking for url....Done")
+        time.sleep(1)
+        cwd = os.getcwd()
+        os.chdir(cwd)
+        print("Writing to file....")
+        f = open("virtualbox.exe","wb")
+        f.write(contents)
+        f.close()
+        time.sleep(1)
+        print("Writing file....Done")
+        time.sleep(1)
+        print("Initializing install menu...")
+        os.system("virtualbox.exe")
+        print("Initializing install menu...Done")
+        time.sleep(10)
+        exit()
+    except OSError:
+        print("Something went wrong")
+        exit()
+    except KeyboardInterrupt:
+        print("Dont interrupt")
+        pass
 
-
-
-
+def virtualboxL():
+    try:
+        print("Looking for url....")
+        url = "https://download.virtualbox.org/virtualbox/6.0.6/VirtualBox-6.0.6-130049-Linux_amd64.run"
+        requested = requests.get(url)
+        contents = requested.content
+        cwd = os.getcwd()
+        print("Looking for url....Done")
+        time.sleep(1)
+        print("Writing to file...")
+        f = open("virtualbox.run","wb")
+        f.write(contents)
+        f.close()
+        time.sleep(1)
+        print("Writing to file...Done")
+        time.sleep(1)
+        print("Moving file to /opt directory...")
+        os.system("mv virtualbox.run /opt")
+        time.sleep(1)
+        print("Moved file to /opt directory...Done")
+        time.sleep(1)
+        print("Initializing menu....")
+        os.system("virtualbox.run")
+        time.sleep(1)
+        print("Initializing menu...Done")
+        time.sleep(10)
+        exit()
+     except OSError:
+        print("Something went wrong")
+        exit()
+     except KeyboardInterruptError:
+        print("Dont interrupt")
+        pass
 
 
 
