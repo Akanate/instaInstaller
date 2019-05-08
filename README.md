@@ -16,6 +16,7 @@ Linux:
 * Python3
 * Atom
 * VirtualBox
+* Chromium
 
 Windows:
 * PyCharm
@@ -24,6 +25,7 @@ Windows:
 * Notepad++
 * Sublime
 * VirtualBox
+* Chromium
 
 ## Ez-Mode (Easy Mode):
 > Follow these instructions if you're struggling to download (LINUX Only)
