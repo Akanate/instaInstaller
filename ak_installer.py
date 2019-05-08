@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Version 1.1
+#Version 1.2
 import os
 import requests
 import time
