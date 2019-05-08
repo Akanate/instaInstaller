@@ -471,6 +471,10 @@ def initialize(choose):
         PycharmL()
     elif choose == "get atom linux":
         atom()
+    elif choose == "get virtualbox linux":
+        virtualboxL()
+    elif choose == "get virtualbox windows":
+        virtualbox()
     elif choose == "list":
         f = open("list.txt","r")
         contents = f.read()
