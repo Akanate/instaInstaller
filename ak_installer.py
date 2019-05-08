@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Version 1.3
+#Version 1.31
 import os
 import requests
 import time
@@ -521,7 +521,7 @@ def initialize(choose):
         virtualbox()
     elif choose == "get chromium windows":
         chromium()
-    elif choose == "get chromium linux:
+    elif choose == "get chromium linux":
         chromiumL()
     elif choose == "list":
         f = open("list.txt","r")
