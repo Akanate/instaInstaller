@@ -407,6 +407,7 @@ def virtualbox():
         print("Initializing install menu...")
         os.system("virtualbox.exe")
         print("Initializing install menu...Done")
+        os.system("del virtualbox.exe")
         time.sleep(10)
         exit()
     except OSError:
@@ -449,7 +450,51 @@ def virtualboxL():
     except KeyboardInterruptError:
         print("Dont interrupt")
         pass
+   
+def chromium():
+    try:
+        url = "https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/657721/mini_installer.exe"
+        print("Getting url...")
+        time.sleep(1)
+        requested = requests.get(url)
+        contents = requested.content
+        print("Getting url....Done")
+        time.sleep(1)
+        cwd = os.getcwd()
+        os.chdir(cwd)
+        print("Writing to file...")
+        f = open("chromium.exe","wb")
+        f.write(contents)
+        f.close()
+        print("Writing to file...Done")
+        time.sleep(1)
+        print("Initializing menu...")
+        os.system("chromium.exe")
+        print("Intializing menu...Done")
+        os.system("del chromium.exe")
+        time.sleep(10)
+        exit()
+    except OSError:
+        print("Something went wrong")
+        exit()
+    except KeyboardInterruptError:
+        print("You can't interrupt")
+        pass
 
+def chromiumL():
+    try:
+        print("Downloading for you")
+        os.system("sudo apt-get update")
+        os.system("sudo apt install chromium chromium-l10n")
+        print("Done")
+        time.sleep(10)
+        exit()
+     except OSError:
+        print("Something went wrong")
+        exit()
+     except KeyboardInterruptError:
+        print("You cant interrupt")
+        pass
 
 def initialize(choose):
     if choose == "get notepad++ windows":
@@ -474,6 +519,10 @@ def initialize(choose):
         virtualboxL()
     elif choose == "get virtualbox windows":
         virtualbox()
+    elif choose == "get chromium windows":
+        chromium()
+    elif choose == "get chromium linux:
+        chromiumL()
     elif choose == "list":
         f = open("list.txt","r")
         contents = f.read()
