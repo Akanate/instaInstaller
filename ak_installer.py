@@ -489,10 +489,10 @@ def chromiumL():
         print("Done")
         time.sleep(10)
         exit()
-     except OSError:
+    except OSError:
         print("Something went wrong")
         exit()
-     except KeyboardInterruptError:
+    except KeyboardInterruptError:
         print("You cant interrupt")
         pass
 
