@@ -3,13 +3,11 @@ instaInstaller is a program created in **python3** which can be used to install 
 
 **instaInstaller must be ran through either a Terminal window or the Command Prompt.**
 
-## Version 1.2 Update log
+## Version 1.3 Update log
 > Update to this version by running **update.py** (Windows) or **update_linux.sh** (Linux)
-- Added VirtualBox for Windows and Linux
-- Made it so you cannot interrupt download so then it breaks.
-- Minor bug fixes
-
->Update 1.3 will feature more applications
+- Added Chromium for both versions
+- Fixed a major bug.
+> Thanks to ProgrammingTiger\#0341 for spotting it.
 
 ## Currently supported programs
 Linux:
