@@ -4,18 +4,15 @@ instaInstaller is a program created in **python3** which can be used to install 
 **instaInstaller must be ran through either a Terminal window or the Command Prompt.**
 
 ## Version 1.31 Update log
-> Update to this version by running **update.py** (Windows) or **update_linux.sh** (Linux)
+> Update to this version by running **update_linux.sh** (Linux)
 - Added Chromium for both versions
 - Fixed a major bug.
 > Thanks to ProgrammingTiger\#0341 for spotting it.
-- [v1.31] Fixed another major bug
-- [v1.31] Fixed another one.
-## Updaters have been updated
--You need to git clone this repository again if on windows.
--If you are on linux don't worry just run update_linux.sh and you will get new version.
-## What has been added to them
--The windows updater will now update the whole repository meaning if a new file comes out then you can just run update.py and it will get all of the new files for you.
--The linux updater has been updated and now has less bugs and is lot more smooth.
+- Fixed 2 other major bugs.
+### Update Management Patch
+- The script for Updating the Windows version has been re-written and is **incompatiable** with previous versions. You will need to reinstall the repository to continue using this from v1.4 onwards (when released). 
+> This does not apply to Linux users, who can continue using update_linux.sh.
+- Updaters have been optimised to remove bugs.
 
 ## Currently supported programs
 Linux:
