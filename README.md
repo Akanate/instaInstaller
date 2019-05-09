@@ -7,6 +7,7 @@ instaInstaller is a program created in **python3** which can be used to install 
 > Update to this version by running **update_linux.sh** (Linux)
 - Added VS Code and Discord Stable to Linux.
 - **Patched the fact that the Discord installer downloaded literally nothing. oops.**
+> This problem existed due to *someone* rushing us for a release.
 ### Update Management Patch
 - The script for Updating the Windows version has been re-written and is **incompatiable** with previous versions. You will need to reinstall the repository to continue using this from v1.4 onwards (when released). 
 > This does not apply to Linux users, who can continue using update_linux.sh.
