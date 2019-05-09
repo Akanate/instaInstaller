@@ -13,15 +13,11 @@ def choice():
         choice()
 
 def git_install():
+    print("Starting update")
     cwd = os.getcwd()
     os.chdir(cwd)
-    os.mkdir("update_files")
-    print("Making directory for store")
-    os.chdir("update_files")
     os.system("rmdir /q /s instaInstaller")
     os.system("git clone https://github.com/WHYSOEASY/instaInstaller.git")
-    os.chdir(cwd)
-    os.system("rmdir /q /s update_files")
     print("Done")
     exit()
 
