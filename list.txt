@@ -5,6 +5,8 @@ get python2 linux
 get atom linux
 get virtualbox linux
 get chromium linux
+get discord linux
+get vscode linux
 
 get python2 windows
 get python3 windows
