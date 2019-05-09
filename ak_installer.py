@@ -538,9 +538,8 @@ def discordL():
         os.chdir("/opt")
         time.sleep(1)
         print("Changed to /opt")
-        os.system("mv /opt/Discord/Discord /root/Desktop/")
         time.sleep(1)
-        print("Moved discord to desktop")
+        print("Moved discord is stored in /opt/Discord")
         print("To start it drag the file on the desktop called discord into your terminal and press enter")
         exit()
     except OSError:
