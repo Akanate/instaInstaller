@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Version 1.31
+#Version 1.40
 import os
 import requests
 import time
@@ -495,7 +495,63 @@ def chromiumL():
     except KeyboardInterrupt:
         print("You cant interrupt")
         pass
+def vscodeL():
+    try:
+        print("Starting setup")
+        os.system("sudo apt-get install snap")
+        print("Got snap")
+        os.system("sudo systemctl enable --now snapd.socket")
+        print("Enabled socket")
+        os.system("sudo ln -s /var/lib/snapd/snap /snap")
+        print("Enabled gateway")
+        time.sleep(1)
+        print("Installing")
+        os.system("sudo snap install --classic code")
+        print("Done just type snap run code to run it doesn't run with root")
+    except OSError:
+        print("Something went wrong")
+        exit()
+    except KeyboardInterrupt:
+        print("Dont interrupt")
+        exit()
 
+def discordL():
+    try:
+        print("Getting url....")
+        requsted = request.get(url)
+        contents = request.content
+        print("Getting url...Done")
+        time.sleep(1)
+        print("Writing to file...")
+        f = open("discord.tar.gz","wb")
+        f.write(contents)
+        f.close()
+        print("Writing file...Done")
+        cwd = os.getcwd()
+        os.system("apt-get install tar")
+        os.chdir(cwd)
+        os.system("tar xvf discord.tar.gz")
+        print("Untarred")
+        os.system("mv Discord /opt")
+        time.sleep(1)
+        print("Moved to /opt")
+        os.chdir("/opt")
+        time.sleep(1)
+        print("Changed to /opt")
+        os.system("mv /opt/Discord/Discord /root/Desktop/")
+        time.sleep(1)
+        print("Moved discord to desktop")
+        print("To start it drag the file on the desktop called discord into your terminal and press enter")
+        exit()
+    except OSError:
+        print("Something went wrong")
+        exit()
+    except KeyboardInterrupt:
+        print("Dont interrupt")
+        pass
+    
+    
+     
 def initialize(choose):
     if choose == "get notepad++ windows":
         notepad_plus()
@@ -523,6 +579,10 @@ def initialize(choose):
         chromium()
     elif choose == "get chromium linux":
         chromiumL()
+    elif choose == "get vscode linux":
+        vscodeL()
+    elif choose == "get discord linux":
+        discordL()
     elif choose == "list":
         f = open("list.txt","r")
         contents = f.read()
