@@ -11,11 +11,11 @@ instaInstaller is a program created in **python3** which can be used to install 
 - [v1.31] Fixed another major bug
 - [v1.31] Fixed another one.
 ## Updaters have been updated
-> *You need to git clone this repository again if on windows.
-> *If you are on linux don't worry just run update_linux.sh and you will get new version.
+1.You need to git clone this repository again if on windows.
+2.If you are on linux don't worry just run update_linux.sh and you will get new version.
 ## What has been added to them
-> *The windows updater will now update the whole repository meaning if a new file comes out then you can just run update.py and it will get all of the new files for you.
-> *The linux updater has been updated and now has less bugs and is lot more smooth.
+1.The windows updater will now update the whole repository meaning if a new file comes out then you can just run update.py and it will get all of the new files for you.
+2.The linux updater has been updated and now has less bugs and is lot more smooth.
 
 ## Currently supported programs
 Linux:
