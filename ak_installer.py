@@ -520,7 +520,7 @@ def discordL():
         url = "https://dl.discordapp.net/apps/linux/0.0.9/discord-0.0.9.tar.gz"
         print("Getting url....")
         requsted = requests.get(url)
-        contents = request.content
+        contents = requested.content
         print("Getting url...Done")
         time.sleep(1)
         print("Writing to file...")
