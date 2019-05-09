@@ -517,6 +517,7 @@ def vscodeL():
 
 def discordL():
     try:
+        url = "https://dl.discordapp.net/apps/linux/0.0.9/discord-0.0.9.tar.gz"
         print("Getting url....")
         requsted = requests.get(url)
         contents = request.content
