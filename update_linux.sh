@@ -1,11 +1,14 @@
 #!/bin/bash
-echo "Removing old files"
+echo "Starting complete update"
 cd "$(dirname "$0")"
-cd ..
 rm -r instaInstaller
-echo "Moving to directory which was created"
+rm -r instaInstaller-master
+echo "Ignore any errors where the directory may have not been deleted"
 git clone https://github.com/WHYSOEASY/instaInstaller.git
-cd instaInstaller
-echo "Update complete"
-echo "Make sure to do cd .. then go back on it and updated files will be there"
+echo "Got update"
+echo "Appliying update"
+cd ..
+echo "Done if you see nothing in your directory it is fine just do cd .. and check again."
+exit
+
 
