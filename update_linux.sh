@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting complete update"
-cd "$(dirname "$0")"
+cd ..
 rm -r instaInstaller
 rm -r instaInstaller-master
 echo "Ignore any errors where the directory may have not been deleted"
