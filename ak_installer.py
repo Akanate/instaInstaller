@@ -598,7 +598,7 @@ def initialize(choose):
               Eg get notepad++ windows
               Remember ths is in beta stages so has limited amount of options
               list-Will show you all the programs you can install at the moment
-              Version 1.31
+              Version 1.40
               """)
 choice = ' '.join(sys.argv[1:])
 initialize(choice)
