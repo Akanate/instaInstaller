@@ -3,12 +3,9 @@ instaInstaller is a program created in **python3** which can be used to install 
 
 **instaInstaller must be ran through either a Terminal window or the Command Prompt.**
 
-## Version 1.31 Update log
+## Version 1.4 Update log
 > Update to this version by running **update_linux.sh** (Linux)
-- Added Chromium for both versions
-- Fixed a major bug.
-> Thanks to ProgrammingTiger\#0341 for spotting it.
-- Fixed 2 other major bugs.
+- Added VS Code and Discord Stable to Linux.
 ### Update Management Patch
 - The script for Updating the Windows version has been re-written and is **incompatiable** with previous versions. You will need to reinstall the repository to continue using this from v1.4 onwards (when released). 
 > This does not apply to Linux users, who can continue using update_linux.sh.
@@ -22,6 +19,8 @@ Linux:
 * Atom
 * VirtualBox
 * Chromium
+* VS Code
+* Discord Stable
 
 Windows:
 * PyCharm
