@@ -518,7 +518,7 @@ def vscodeL():
 def discordL():
     try:
         print("Getting url....")
-        requsted = request.get(url)
+        requsted = requests.get(url)
         contents = request.content
         print("Getting url...Done")
         time.sleep(1)
